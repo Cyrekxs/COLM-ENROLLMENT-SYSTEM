@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_Loaders" targetNamespace="http://tempuri.org/DS_Loaders.xsd" xmlns:mstns="http://tempuri.org/DS_Loaders.xsd" xmlns="http://tempuri.org/DS_Loaders.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_Loaders" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_Loaders" msprop:Generator_UserDSName="DS_Loaders">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DT_Barangay" msprop:Generator_TableClassName="DT_BarangayDataTable" msprop:Generator_TableVarName="tableDT_Barangay" msprop:Generator_TablePropName="DT_Barangay" msprop:Generator_RowDeletingName="DT_BarangayRowDeleting" msprop:Generator_RowChangingName="DT_BarangayRowChanging" msprop:Generator_RowEvHandlerName="DT_BarangayRowChangeEventHandler" msprop:Generator_RowDeletedName="DT_BarangayRowDeleted" msprop:Generator_UserTableName="DT_Barangay" msprop:Generator_RowChangedName="DT_BarangayRowChanged" msprop:Generator_RowEvArgName="DT_BarangayRowChangeEvent" msprop:Generator_RowClassName="DT_BarangayRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Barangay" msprop:Generator_ColumnVarNameInTable="columnBarangay" msprop:Generator_ColumnPropNameInRow="Barangay" msprop:Generator_ColumnPropNameInTable="BarangayColumn" msprop:Generator_UserColumnName="Barangay" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DT_Municipality" msprop:Generator_TableClassName="DT_MunicipalityDataTable" msprop:Generator_TableVarName="tableDT_Municipality" msprop:Generator_TablePropName="DT_Municipality" msprop:Generator_RowDeletingName="DT_MunicipalityRowDeleting" msprop:Generator_RowChangingName="DT_MunicipalityRowChanging" msprop:Generator_RowEvHandlerName="DT_MunicipalityRowChangeEventHandler" msprop:Generator_RowDeletedName="DT_MunicipalityRowDeleted" msprop:Generator_UserTableName="DT_Municipality" msprop:Generator_RowChangedName="DT_MunicipalityRowChanged" msprop:Generator_RowEvArgName="DT_MunicipalityRowChangeEvent" msprop:Generator_RowClassName="DT_MunicipalityRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Municipality" msprop:Generator_ColumnVarNameInTable="columnMunicipality" msprop:Generator_ColumnPropNameInRow="Municipality" msprop:Generator_ColumnPropNameInTable="MunicipalityColumn" msprop:Generator_UserColumnName="Municipality" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DT_Province" msprop:Generator_TableClassName="DT_ProvinceDataTable" msprop:Generator_TableVarName="tableDT_Province" msprop:Generator_TablePropName="DT_Province" msprop:Generator_RowDeletingName="DT_ProvinceRowDeleting" msprop:Generator_RowChangingName="DT_ProvinceRowChanging" msprop:Generator_RowEvHandlerName="DT_ProvinceRowChangeEventHandler" msprop:Generator_RowDeletedName="DT_ProvinceRowDeleted" msprop:Generator_UserTableName="DT_Province" msprop:Generator_RowChangedName="DT_ProvinceRowChanged" msprop:Generator_RowEvArgName="DT_ProvinceRowChangeEvent" msprop:Generator_RowClassName="DT_ProvinceRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Province" msprop:Generator_ColumnVarNameInTable="columnProvince" msprop:Generator_ColumnPropNameInRow="Province" msprop:Generator_ColumnPropNameInTable="ProvinceColumn" msprop:Generator_UserColumnName="Province" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

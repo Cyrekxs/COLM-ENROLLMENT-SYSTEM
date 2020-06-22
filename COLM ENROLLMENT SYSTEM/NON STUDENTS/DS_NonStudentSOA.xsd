@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_NonStudentSOA" targetNamespace="http://tempuri.org/DS_NonStudentSOA.xsd" xmlns:mstns="http://tempuri.org/DS_NonStudentSOA.xsd" xmlns="http://tempuri.org/DS_NonStudentSOA.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_NonStudentSOA" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_NonStudentSOA" msprop:Generator_UserDSName="DS_NonStudentSOA">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DT_SOA" msprop:Generator_TableClassName="DT_SOADataTable" msprop:Generator_TableVarName="tableDT_SOA" msprop:Generator_TablePropName="DT_SOA" msprop:Generator_RowDeletingName="DT_SOARowDeleting" msprop:Generator_RowChangingName="DT_SOARowChanging" msprop:Generator_RowEvHandlerName="DT_SOARowChangeEventHandler" msprop:Generator_RowDeletedName="DT_SOARowDeleted" msprop:Generator_UserTableName="DT_SOA" msprop:Generator_RowChangedName="DT_SOARowChanged" msprop:Generator_RowEvArgName="DT_SOARowChangeEvent" msprop:Generator_RowClassName="DT_SOARow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="_Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_UserColumnName="Date" type="xs:string" minOccurs="0" />
+              <xs:element name="RefNo" msprop:Generator_ColumnVarNameInTable="columnRefNo" msprop:Generator_ColumnPropNameInRow="RefNo" msprop:Generator_ColumnPropNameInTable="RefNoColumn" msprop:Generator_UserColumnName="RefNo" type="xs:string" minOccurs="0" />
+              <xs:element name="ORNo" msprop:Generator_ColumnVarNameInTable="columnORNo" msprop:Generator_ColumnPropNameInRow="ORNo" msprop:Generator_ColumnPropNameInTable="ORNoColumn" msprop:Generator_UserColumnName="ORNo" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" type="xs:string" minOccurs="0" />
+              <xs:element name="Paid" msprop:Generator_ColumnVarNameInTable="columnPaid" msprop:Generator_ColumnPropNameInRow="Paid" msprop:Generator_ColumnPropNameInTable="PaidColumn" msprop:Generator_UserColumnName="Paid" type="xs:string" minOccurs="0" />
+              <xs:element name="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_UserColumnName="Amount" type="xs:string" minOccurs="0" />
+              <xs:element name="Balance" msprop:Generator_ColumnVarNameInTable="columnBalance" msprop:Generator_ColumnPropNameInRow="Balance" msprop:Generator_ColumnPropNameInTable="BalanceColumn" msprop:Generator_UserColumnName="Balance" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

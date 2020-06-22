@@ -1,0 +1,101 @@
+DATABASE UPDATE:
+
+    UPDATING TBL_STUDENT_INFORMATION
+
+	-ADDING A NEW FIELDNAME(Date_Registered)
+	-ADDING A NEW FIELDNAME(Is_Deleted)
+
+    UPDATING TBL_COLLEGE_ASSESSMENT_SUMMARY
+
+	-ADDING A NEW FIELDNAME(Assessed_Date)
+	-ADDING A NEW FIELDNAME(Education_Level)
+
+    UPDATING TBL_COLLEGE_CURRICULUM
+	-REMOVE
+		-SUBJECT_TYPE
+		-CURRICULUM_TYPE
+
+    ADDING NEW TABLES
+
+	-TBL_STUDENT_FORMS
+		-FIELDS()
+			-ID
+			-STUDENT_NUMBER
+			-FORM_ID
+			-FORM_CODE
+			-DATE_SUBMITTED
+
+	-TBL_FORMS
+		-FIELDS()
+			-ID
+			-FORM_CODE
+			-DATE_CREATED
+			-CREATED_BY
+
+	-TBL_FACULTY_LIST
+		-FIELDS()
+			-ID
+			-LASTNAME,FIRSTNAME,MIDDLENAME
+			-DEPARTMENT
+			-IS_DELETED
+
+	-TBL_FACULTY_PORTED_SUBJECTS
+		-FIELDS()
+			-ID
+			-SUBJ_ID
+			-FACULTY_ID
+	-TBL_SETTINGS_ROOM
+		-FIELDS()
+			-ID	
+			-ROOM_CODE
+			-DESCRIPTION
+
+	-TBL_SETTINGS_SUBJECT_SETTED
+		-FIELDS()
+			ID		int		Unchecked
+			Academic_Year	nvarchar(50)	Checked
+			Academic_Sem	nvarchar(50)	Checked
+			Course_Code	nvarchar(50)	Checked
+			YrLvl		nvarchar(50)	Checked
+			Subj_ID		nvarchar(50)	Checked
+			Subj_Code	nvarchar(50)	Checked
+			Subj_Desc	nvarchar(50)	Checked
+			Subj_Unit	nvarchar(50)	Checked
+			Lec_Hours	nvarchar(50)	Checked
+			Lab_Hours	nvarchar(50)	Checked
+			Subj_Price	money		Checked
+			Is_Deleted	nvarchar(50)	Checked
+	-TBL_SETTINGS_SUBJECT_SCHED
+		-FIELDS()
+			ID		int		Unchecked
+			Academic_Year	nvarchar(50)	Checked
+			Academic_Sem	nvarchar(50)	Checked
+			Faculty_Name	nvarchar(50)	Checked
+			Course_Code	nvarchar(50)	Checked
+			YrLvl		nvarchar(50)	Checked
+			Section_Code	nvarchar(50)	Checked
+			Subj_ID		nvarchar(50)	Checked
+			Sched_Day	nvarchar(50)	Checked
+			Sched_Time_In	nvarchar(50)	Checked
+			Sched_Time_Out	nvarchar(50)	Checked
+			Sched_Room	nvarchar(50)	checked
+	-TBL_SETTINGS_ROOM
+		-FIELDS()
+			ID		int		Unchecked
+			Room_Code	nvarchar(50)	Checked
+			Description	nvarchar(MAX)	Checked
+	-TBL_PROGRAM_LOGS
+		-FIELDS()
+			ID		int		Unchecked
+			Logs		nvarchar(MAX)	Checked
+			Date_Process	datetime	Checked
+			Process_By	nvarchar(50)	Checked
+	-TBL_SETTINGS_SECTIONS
+		-FIELDS()
+			ID		int		Unchecked
+			Education_Level	nvarchar(50)	Checked
+			Course_Code	nvarchar(50)	Checked
+			YrLvl		nvarchar(50)	Checked
+			Section_Code	nvarchar(50)	Checked
+			Academic_Year	nvarchar(50)	Checked
+			Academic_Sem	nvarchar(50)	Checked

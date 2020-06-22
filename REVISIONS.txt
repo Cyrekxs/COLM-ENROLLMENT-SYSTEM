@@ -1,0 +1,5 @@
+* gumawa ng paraan para malagyan ng less ung mga nag ooverpayment
+* lagyan ng course code ung browsing ng schedule sa subject
+* lagyan ng search bar ung browsing ng subject kapag nag ccreate ng tuition fee sa college
+* yes to college
+* nagdodoble ung subject kapag ngclick ng re-assess

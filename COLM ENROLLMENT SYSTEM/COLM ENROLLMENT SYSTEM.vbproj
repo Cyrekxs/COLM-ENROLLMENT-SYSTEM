@@ -1,0 +1,2587 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7E235DE0-7134-4FE3-9071-CC865C9D2673}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>COLM_ENROLLMENT_SYSTEM.My.MyApplication</StartupObject>
+    <RootNamespace>COLM_ENROLLMENT_SYSTEM</RootNamespace>
+    <AssemblyName>COLM ENROLLMENT SYSTEM</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Users\Cyrekxs\Desktop\COLM ENROLLMENT SYSTEM\COLM ENROLLMENT PUBLISHED\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>139</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>COLM ENROLLMENT SYSTEM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>COLM ENROLLMENT SYSTEM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>COLM ENROLLMENT SYSTEM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>COLM ENROLLMENT SYSTEM.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>372B54F09507325F73BC5AA498B4EBA5F7A2579A</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>COLM ENROLLMENT SYSTEM_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1404.0\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="CrystalDecisions.CrystalReports.Engine" />
+    <Import Include="CrystalDecisions.Shared" />
+    <Import Include="Microsoft.Reporting.WinForms" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Data.Sql" />
+    <Import Include="System.Data.SqlClient" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="ASSESSMENT\frm_assessment_lists.Designer.vb">
+      <DependentUpon>frm_assessment_lists.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_assessment_lists.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_college_assessment_copier.Designer.vb">
+      <DependentUpon>frm_college_assessment_copier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_college_assessment_copier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_elementary_assessment.Designer.vb">
+      <DependentUpon>frm_elementary_assessment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_elementary_assessment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_elementary_assessment_browse_students.Designer.vb">
+      <DependentUpon>frm_elementary_assessment_browse_students.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_elementary_assessment_browse_students.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_highschool_assessment_old.designer.vb">
+      <DependentUpon>frm_highschool_assessment_old.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_highschool_assessment_old.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_college_assessment_viewing.Designer.vb">
+      <DependentUpon>frm_college_assessment_viewing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_college_assessment_viewing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_old_balance_checker.Designer.vb">
+      <DependentUpon>frm_old_balance_checker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_old_balance_checker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_pre_elementary_assessment.Designer.vb">
+      <DependentUpon>frm_pre_elementary_assessment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_pre_elementary_assessment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_pre_elementary_assessment_browse_student.Designer.vb">
+      <DependentUpon>frm_pre_elementary_assessment_browse_student.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_pre_elementary_assessment_browse_student.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COLLEGE ASSESSMENT\frm_college_assessment_browser_mfee.Designer.vb">
+      <DependentUpon>frm_college_assessment_browser_mfee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="COLLEGE ASSESSMENT\frm_college_assessment_browser_mfee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COLLEGE ASSESSMENT\frm_college_assessment_browser_schedule.Designer.vb">
+      <DependentUpon>frm_college_assessment_browser_schedule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="COLLEGE ASSESSMENT\frm_college_assessment_browser_schedule.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COLLEGE ASSESSMENT\frm_college_assessment_browser_subject_new_curriculum.Designer.vb">
+      <DependentUpon>frm_college_assessment_browser_subject_new_curriculum.vb</DependentUpon>
+    </Compile>
+    <Compile Include="COLLEGE ASSESSMENT\frm_college_assessment_browser_subject_new_curriculum.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COLLEGE ASSESSMENT\frm_college_assessment_entry.Designer.vb">
+      <DependentUpon>frm_college_assessment_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="COLLEGE ASSESSMENT\frm_college_assessment_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COLLEGE ASSESSMENT\frm_college_assessment_browser_students.Designer.vb">
+      <DependentUpon>frm_college_assessment_browser_students.vb</DependentUpon>
+    </Compile>
+    <Compile Include="COLLEGE ASSESSMENT\frm_college_assessment_browser_students.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COLLEGE ASSESSMENT\frm_college_assessment_browser_subject.Designer.vb">
+      <DependentUpon>frm_college_assessment_browser_subject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="COLLEGE ASSESSMENT\frm_college_assessment_browser_subject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COLLEGE ASSESSMENT\frm_college_assessment_old_assessment.Designer.vb">
+      <DependentUpon>frm_college_assessment_old_assessment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="COLLEGE ASSESSMENT\frm_college_assessment_old_assessment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COLLEGE ASSESSMENT\frm_dropping.Designer.vb">
+      <DependentUpon>frm_dropping.vb</DependentUpon>
+    </Compile>
+    <Compile Include="COLLEGE ASSESSMENT\frm_dropping.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COLLEGE REGISTRATION\frm_college_registration_bridge_subjects.Designer.vb">
+      <DependentUpon>frm_college_registration_bridge_subjects.vb</DependentUpon>
+    </Compile>
+    <Compile Include="COLLEGE REGISTRATION\frm_college_registration_bridge_subjects.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COLLEGE REGISTRATION\frm_college_registration_browse_students.Designer.vb">
+      <DependentUpon>frm_college_registration_browse_students.vb</DependentUpon>
+    </Compile>
+    <Compile Include="COLLEGE REGISTRATION\frm_college_registration_browse_students.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COLLEGE REGISTRATION\frm_college_registration_edit.Designer.vb">
+      <DependentUpon>frm_college_registration_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="COLLEGE REGISTRATION\frm_college_registration_edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COLLEGE REGISTRATION\frm_college_registration_entry.Designer.vb">
+      <DependentUpon>frm_college_registration_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="COLLEGE REGISTRATION\frm_college_registration_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COLLEGE REGISTRATION\frm_college_registration_lists.Designer.vb">
+      <DependentUpon>frm_college_registration_lists.vb</DependentUpon>
+    </Compile>
+    <Compile Include="COLLEGE REGISTRATION\frm_college_registration_lists.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COLLEGE SETTINGS\frm_settings_college_miscellaneous_add.Designer.vb">
+      <DependentUpon>frm_settings_college_miscellaneous_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="COLLEGE SETTINGS\frm_settings_college_miscellaneous_add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COLLEGE SETTINGS\frm_settings_college_tuition.Designer.vb">
+      <DependentUpon>frm_settings_college_tuition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="COLLEGE SETTINGS\frm_settings_college_tuition.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COLLEGE SETTINGS\frm_settings_college_tuition_add_subjects.Designer.vb">
+      <DependentUpon>frm_settings_college_tuition_add_subjects.vb</DependentUpon>
+    </Compile>
+    <Compile Include="COLLEGE SETTINGS\frm_settings_college_tuition_add_subjects.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COLLEGE SETTINGS\frm_settings_college_tuition_entry.Designer.vb">
+      <DependentUpon>frm_settings_college_tuition_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="COLLEGE SETTINGS\frm_settings_college_tuition_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COLLEGE SETTINGS\frm_settings_college_tuition_lists.Designer.vb">
+      <DependentUpon>frm_settings_college_tuition_lists.vb</DependentUpon>
+    </Compile>
+    <Compile Include="COLLEGE SETTINGS\frm_settings_college_tuition_lists.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DS_HS_Assessment.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_HS_Assessment.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DS_HS_Assessment.vb">
+      <DependentUpon>DS_HS_Assessment.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ENROLLMENT LIST\ds_enrollment_list.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds_enrollment_list.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ENROLLMENT LIST\ds_enrollment_list.vb">
+      <DependentUpon>ds_enrollment_list.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ENROLLMENT LIST\frm_enrollment_lists.Designer.vb">
+      <DependentUpon>frm_enrollment_lists.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ENROLLMENT LIST\frm_enrollment_lists.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FACULTY\frm_faculty_account.Designer.vb">
+      <DependentUpon>frm_faculty_account.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FACULTY\frm_faculty_account.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FACULTY\frm_faculty_lists.Designer.vb">
+      <DependentUpon>frm_faculty_lists.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FACULTY\frm_faculty_lists.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FACULTY\frm_faculty_lists_entry.Designer.vb">
+      <DependentUpon>frm_faculty_lists_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FACULTY\frm_faculty_lists_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_dummy.Designer.vb">
+      <DependentUpon>frm_dummy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_dummy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_lists_assessed_students.Designer.vb">
+      <DependentUpon>frm_lists_assessed_students.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_lists_assessed_students.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_login.Designer.vb">
+      <DependentUpon>frm_login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_main2.Designer.vb">
+      <DependentUpon>frm_main2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_main2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GRADING SYSTEM\DS_DeansLister.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_DeansLister.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GRADING SYSTEM\frm_deans_lister.Designer.vb">
+      <DependentUpon>frm_deans_lister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GRADING SYSTEM\frm_deans_lister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GRADING SYSTEM\frm_deans_lister_candidates.Designer.vb">
+      <DependentUpon>frm_deans_lister_candidates.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GRADING SYSTEM\frm_deans_lister_candidates.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HIGH SCHOOL\SETTINGS\frm_settings_tuition_miscellaneous_entry.Designer.vb">
+      <DependentUpon>frm_settings_tuition_miscellaneous_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HIGH SCHOOL\SETTINGS\frm_settings_tuition_miscellaneous_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HIGH SCHOOL\SETTINGS\frm_settings_tuition_miscellaneous_lists.Designer.vb">
+      <DependentUpon>frm_settings_tuition_miscellaneous_lists.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HIGH SCHOOL\SETTINGS\frm_settings_tuition_miscellaneous_lists.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INFORMATION\frm_lrn_entry.Designer.vb">
+      <DependentUpon>frm_lrn_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INFORMATION\frm_lrn_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INFORMATION\students_lists_elementary.Designer.vb">
+      <DependentUpon>students_lists_elementary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INFORMATION\students_lists_elementary.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="INFORMATION\student_lists_pre_elementary.Designer.vb">
+      <DependentUpon>student_lists_pre_elementary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INFORMATION\student_lists_pre_elementary.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainOfficial.Designer.vb">
+      <DependentUpon>MainOfficial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainOfficial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DSTestImageReport.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSTestImageReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INFORMATION\frm_main_official.Designer.vb">
+      <DependentUpon>frm_main_official.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INFORMATION\frm_main_official.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NON STUDENTS\DS_NonStudentSOA.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_NonStudentSOA.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NON STUDENTS\frm_edit_non_student_fee.Designer.vb">
+      <DependentUpon>frm_edit_non_student_fee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NON STUDENTS\frm_edit_non_student_fee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NON STUDENTS\frm_nonstudent_account.Designer.vb">
+      <DependentUpon>frm_nonstudent_account.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NON STUDENTS\frm_nonstudent_account.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NON STUDENTS\frm_nonstudent_charge_fee.Designer.vb">
+      <DependentUpon>frm_nonstudent_charge_fee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NON STUDENTS\frm_nonstudent_charge_fee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NON STUDENTS\frm_nonstudent_lists.Designer.vb">
+      <DependentUpon>frm_nonstudent_lists.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NON STUDENTS\frm_nonstudent_lists.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NON STUDENTS\frm_nonstudent_lists_entry.Designer.vb">
+      <DependentUpon>frm_nonstudent_lists_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NON STUDENTS\frm_nonstudent_lists_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NON STUDENTS\frm_nonstudent_payment_cash.Designer.vb">
+      <DependentUpon>frm_nonstudent_payment_cash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NON STUDENTS\frm_nonstudent_payment_cash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NON STUDENTS\frm_nonstudent_browse.Designer.vb">
+      <DependentUpon>frm_nonstudent_browse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NON STUDENTS\frm_nonstudent_browse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAYMENT\frm_browse_student_additional_fees.Designer.vb">
+      <DependentUpon>frm_browse_student_additional_fees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\frm_browse_student_additional_fees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAYMENT\frm_payment_transfer.Designer.vb">
+      <DependentUpon>frm_payment_transfer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\frm_payment_transfer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REGISTRATION\frm_registered_pre_elementary_students.Designer.vb">
+      <DependentUpon>frm_registered_pre_elementary_students.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REGISTRATION\frm_registered_pre_elementary_students.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REGISTRATION\frm_registration_elementary_edit.Designer.vb">
+      <DependentUpon>frm_registration_elementary_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REGISTRATION\frm_registration_elementary_edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RDLCReporting.Designer.vb">
+      <DependentUpon>RDLCReporting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RDLCReporting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REGISTRATION\frm_registered_elementary_students.Designer.vb">
+      <DependentUpon>frm_registered_elementary_students.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REGISTRATION\frm_registered_elementary_students.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REGISTRATION\frm_registration_elementary_entry.Designer.vb">
+      <DependentUpon>frm_registration_elementary_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REGISTRATION\frm_registration_elementary_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REGISTRATION\frm_registration_pre_elementary_edit.Designer.vb">
+      <DependentUpon>frm_registration_pre_elementary_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REGISTRATION\frm_registration_pre_elementary_edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REGISTRATION\frm_registration_pre_elementary_entry.Designer.vb">
+      <DependentUpon>frm_registration_pre_elementary_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REGISTRATION\frm_registration_pre_elementary_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REGISTRATION\frm_registration_seniorhigh_edit.designer.vb">
+      <DependentUpon>frm_registration_seniorhigh_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REGISTRATION\frm_registration_seniorhigh_edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\BALANCE CHECKER\frm_balance_checker_revised.Designer.vb">
+      <DependentUpon>frm_balance_checker_revised.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\BALANCE CHECKER\frm_balance_checker_revised.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\CERTIFICATION\frm_certifications_entry.Designer.vb">
+      <DependentUpon>frm_certifications_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\CERTIFICATION\frm_certifications_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\DS_GraduatingStudents.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_GraduatingStudents.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\DS_JuniorHigh_Masterlist.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_JuniorHigh_Masterlist.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\DS_JuniorHigh_Masterlist.vb">
+      <DependentUpon>DS_JuniorHigh_Masterlist.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\DS_Masterlists_College_Section.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Masterlists_College_Section.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\DS_PaymentSchedule.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_PaymentSchedule.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\DS_SeniorHigh_Masterlist.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_SeniorHigh_Masterlist.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\frm_available_subjects.Designer.vb">
+      <DependentUpon>frm_available_subjects.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\frm_available_subjects.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\frm_balance_checker.Designer.vb">
+      <DependentUpon>frm_balance_checker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\frm_balance_checker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\frm_chart_report.Designer.vb">
+      <DependentUpon>frm_chart_report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\frm_chart_report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\MASTERLIST\frm_college_masterlists.Designer.vb">
+      <DependentUpon>frm_college_masterlists.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\MASTERLIST\frm_college_masterlists.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\frm_graduating_students.Designer.vb">
+      <DependentUpon>frm_graduating_students.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\frm_graduating_students.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\frm_highschool_enrolled.Designer.vb">
+      <DependentUpon>frm_highschool_enrolled.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\frm_highschool_enrolled.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\frm_masterlist.Designer.vb">
+      <DependentUpon>frm_masterlist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\frm_masterlist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\MASTERLIST\frm_college_masterlist_breakdown.Designer.vb">
+      <DependentUpon>frm_college_masterlist_breakdown.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\MASTERLIST\frm_college_masterlist_breakdown.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\MASTERLIST\frm_masterlists_junior.Designer.vb">
+      <DependentUpon>frm_masterlists_junior.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\MASTERLIST\frm_masterlists_junior.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\MASTERLIST\frm_masterlists_senior.Designer.vb">
+      <DependentUpon>frm_masterlists_senior.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\MASTERLIST\frm_masterlists_senior.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\frm_report.Designer.vb">
+      <DependentUpon>frm_report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\frm_report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\MasterLIstsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MasterLIstsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\DS_SOA.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_SOA.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\frm_payment_edit_other_fees.Designer.vb">
+      <DependentUpon>frm_payment_edit_other_fees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\frm_payment_edit_other_fees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\frm_rdlc_report.Designer.vb">
+      <DependentUpon>frm_rdlc_report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\frm_rdlc_report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GENERAL\COLM_Main.Designer.vb">
+      <DependentUpon>COLM_Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GENERAL\COLM_Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASSESSMENT\DS_ASSESSMENT.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_ASSESSMENT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ASSESSMENT\DS_ASSESSMENT.vb">
+      <DependentUpon>DS_ASSESSMENT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\DS_CREDIT_MEMO1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_CREDIT_MEMO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INFORMATION\DS_Loaders.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Loaders.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="INFORMATION\DS_Loaders.vb">
+      <DependentUpon>DS_Loaders.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\DS_PAYMENT.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_PAYMENT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\DS_PaymentTransactions.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_PaymentTransactions.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\DS_PaymentTransactions.vb">
+      <DependentUpon>DS_PaymentTransactions.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GRADING SYSTEM\DS_SGR.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_SGR.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\enrolled_junior_high.Designer.vb">
+      <DependentUpon>enrolled_junior_high.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\enrolled_junior_high.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REPORTS\enrolled_senior_high.Designer.vb">
+      <DependentUpon>enrolled_senior_high.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\enrolled_senior_high.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PAYMENT\frm_payment_non_student_browse_payer.Designer.vb">
+      <DependentUpon>frm_payment_non_student_browse_payer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\frm_payment_non_student_browse_payer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAYMENT\frm_payment_non_student_internal_lists.Designer.vb">
+      <DependentUpon>frm_payment_non_student_internal_lists.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\frm_payment_non_student_internal_lists.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAYMENT\frm_payers_lists.Designer.vb">
+      <DependentUpon>frm_payers_lists.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\frm_payers_lists.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAYMENT\frm_payers_registration.Designer.vb">
+      <DependentUpon>frm_payers_registration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\frm_payers_registration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAYMENT\frm_payment_non_student.Designer.vb">
+      <DependentUpon>frm_payment_non_student.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\frm_payment_non_student.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\frm_report_officially_enrolled.Designer.vb">
+      <DependentUpon>frm_report_officially_enrolled.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\frm_report_officially_enrolled.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_college_assessment_browse_schedule.Designer.vb">
+      <DependentUpon>frm_college_assessment_browse_schedule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_college_assessment_browse_schedule.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_college_assessment_browse_subject.Designer.vb">
+      <DependentUpon>frm_college_assessment_browse_subject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_college_assessment_browse_subject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_college_assessment_browse_fees.Designer.vb">
+      <DependentUpon>frm_college_assessment_browse_fees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_college_assessment_browse_fees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_college_assessment_subject_list.Designer.vb">
+      <DependentUpon>frm_college_assessment_subject_list.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_college_assessment_subject_list.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\payment_reports_medical_arts.Designer.vb">
+      <DependentUpon>payment_reports_medical_arts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\payment_reports_medical_arts.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REPORTS\payment_reports_nonstudent.Designer.vb">
+      <DependentUpon>payment_reports_nonstudent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\payment_reports_nonstudent.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REPORTS\report_assessment_seniorhigh.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>report_assessment_seniorhigh.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\VOUCHER\DS_Voucher.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Voucher.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\VOUCHER\frm_voucher_report.Designer.vb">
+      <DependentUpon>frm_voucher_report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\VOUCHER\frm_voucher_report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RFID\Card.vb" />
+    <Compile Include="RFID\frm_rfid_entry.Designer.vb">
+      <DependentUpon>frm_rfid_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RFID\frm_rfid_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RFID\frm_rfid_registered_lists.Designer.vb">
+      <DependentUpon>frm_rfid_registered_lists.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RFID\frm_rfid_registered_lists.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RFID\frm_rfid_unregistered_lists.Designer.vb">
+      <DependentUpon>frm_rfid_unregistered_lists.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RFID\frm_rfid_unregistered_lists.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHEDULE\frm_schedule_entry.Designer.vb">
+      <DependentUpon>frm_schedule_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHEDULE\frm_schedule_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHEDULE\frm_schedule_lists.Designer.vb">
+      <DependentUpon>frm_schedule_lists.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHEDULE\frm_schedule_lists.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHEDULE\frm_schedule_unlisted_subjects.Designer.vb">
+      <DependentUpon>frm_schedule_unlisted_subjects.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHEDULE\frm_schedule_unlisted_subjects.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_college_curriculum.Designer.vb">
+      <DependentUpon>frm_college_curriculum.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_college_curriculum.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_college_curriculum_filtering.Designer.vb">
+      <DependentUpon>frm_college_curriculum_filtering.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_college_curriculum_filtering.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAYMENT\frm_college_settings_external_fees.Designer.vb">
+      <DependentUpon>frm_college_settings_external_fees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\frm_college_settings_external_fees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_college_settings_section_entry_list.Designer.vb">
+      <DependentUpon>frm_college_settings_section_entry_list.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_college_settings_section_entry_list.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_college_settings_course_list.Designer.vb">
+      <DependentUpon>frm_college_settings_course_list.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_college_settings_course_list.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_college_settings_department_list_entry.Designer.vb">
+      <DependentUpon>frm_college_settings_department_list_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_college_settings_department_list_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_highschool_assessment.Designer.vb">
+      <DependentUpon>frm_highschool_assessment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_highschool_assessment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_highschool_assessment_browse_student.Designer.vb">
+      <DependentUpon>frm_highschool_assessment_browse_student.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_highschool_assessment_browse_student.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_college_settings_section_subject_entry.Designer.vb">
+      <DependentUpon>frm_college_settings_section_subject_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_college_settings_section_subject_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_highschool_settings_external_fees.Designer.vb">
+      <DependentUpon>frm_highschool_settings_external_fees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_highschool_settings_external_fees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_highschool_settings_section_lists_entry.Designer.vb">
+      <DependentUpon>frm_highschool_settings_section_lists_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_highschool_settings_section_lists_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_highschool_settings_seniorhigh_courses.Designer.vb">
+      <DependentUpon>frm_highschool_settings_seniorhigh_courses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_highschool_settings_seniorhigh_courses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAYMENT\frm_payment_cm_other_entry.Designer.vb">
+      <DependentUpon>frm_payment_cm_other_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\frm_payment_cm_other_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REGISTRATION\frm_registration_college_edit.Designer.vb">
+      <DependentUpon>frm_registration_college_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REGISTRATION\frm_registration_college_edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REGISTRATION\frm_registration_highschool_edit.Designer.vb">
+      <DependentUpon>frm_registration_highschool_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REGISTRATION\frm_registration_highschool_edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GENERAL\MainHome.Designer.vb">
+      <DependentUpon>MainHome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GENERAL\MainHome.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REPORTS\payment_reports.Designer.vb">
+      <DependentUpon>payment_reports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\payment_reports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_settings_external_fees.Designer.vb">
+      <DependentUpon>frm_settings_external_fees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_settings_external_fees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_settings_internal_fees.Designer.vb">
+      <DependentUpon>frm_settings_internal_fees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_settings_internal_fees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAYMENT\frm_payment_browse_student.Designer.vb">
+      <DependentUpon>frm_payment_browse_student.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\frm_payment_browse_student.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAYMENT\frm_payment_cash_other_entry.Designer.vb">
+      <DependentUpon>frm_payment_cash_other_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\frm_payment_cash_other_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAYMENT\frm_payment_internal_list.Designer.vb">
+      <DependentUpon>frm_payment_internal_list.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\frm_payment_internal_list.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAYMENT\frm_payment.Designer.vb">
+      <DependentUpon>frm_payment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\frm_payment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAYMENT\frm_payment_cash_tuition_entry.Designer.vb">
+      <DependentUpon>frm_payment_cash_tuition_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\frm_payment_cash_tuition_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAYMENT\frm_payment_cm_tuition_entry.Designer.vb">
+      <DependentUpon>frm_payment_cm_tuition_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PAYMENT\frm_payment_cm_tuition_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REGISTRATION\frm_registered_college_students.Designer.vb">
+      <DependentUpon>frm_registered_college_students.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REGISTRATION\frm_registered_college_students.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REGISTRATION\frm_registered_highschool_students.Designer.vb">
+      <DependentUpon>frm_registered_highschool_students.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REGISTRATION\frm_registered_highschool_students.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REGISTRATION\frm_registered_seniorhigh_students.Designer.vb">
+      <DependentUpon>frm_registered_seniorhigh_students.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REGISTRATION\frm_registered_seniorhigh_students.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REGISTRATION\frm_registration_highschool_entry.Designer.vb">
+      <DependentUpon>frm_registration_highschool_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REGISTRATION\frm_registration_highschool_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REGISTRATION\frm_registration_seniorhigh_entry.Designer.vb">
+      <DependentUpon>frm_registration_seniorhigh_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REGISTRATION\frm_registration_seniorhigh_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\frm_report_assessment.Designer.vb">
+      <DependentUpon>frm_report_assessment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\frm_report_assessment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_schedule_entry_2.Designer.vb">
+      <DependentUpon>frm_schedule_entry_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_schedule_entry_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_college_assessment_browse_students.Designer.vb">
+      <DependentUpon>frm_college_assessment_browse_students.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_college_assessment_browse_students.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_college_assessment.Designer.vb">
+      <DependentUpon>frm_college_assessment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ASSESSMENT\frm_college_assessment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_college_settings_course_entry.Designer.vb">
+      <DependentUpon>frm_college_settings_course_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_college_settings_course_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_college_curriculum_entry.Designer.vb">
+      <DependentUpon>frm_college_curriculum_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_college_curriculum_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_faculty_entry.Designer.vb">
+      <DependentUpon>frm_faculty_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_faculty_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_faculty_List.Designer.vb">
+      <DependentUpon>frm_faculty_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_faculty_List.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_faculty_subjects_entry.Designer.vb">
+      <DependentUpon>frm_faculty_subjects_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_faculty_subjects_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_main.Designer.vb">
+      <DependentUpon>frm_main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_highschool_settings_yrlvl_lists_entry.Designer.vb">
+      <DependentUpon>frm_highschool_settings_yrlvl_lists_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_highschool_settings_yrlvl_lists_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_settings_discounts.Designer.vb">
+      <DependentUpon>frm_settings_discounts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_settings_discounts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_settings_maximum_students.Designer.vb">
+      <DependentUpon>frm_settings_maximum_students.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_settings_maximum_students.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_settings_payments_lists.Designer.vb">
+      <DependentUpon>frm_settings_payments_lists.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_settings_payments_lists.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_settings_surcharge.Designer.vb">
+      <DependentUpon>frm_settings_surcharge.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_settings_surcharge.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_program_settings.Designer.vb">
+      <DependentUpon>frm_program_settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_program_settings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REGISTRATION\frm_registration_college_entry.Designer.vb">
+      <DependentUpon>frm_registration_college_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REGISTRATION\frm_registration_college_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTS\payment_reports_individual_other_fees.Designer.vb">
+      <DependentUpon>payment_reports_individual_other_fees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\payment_reports_individual_other_fees.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REPORTS\payment_reports_other_fees.Designer.vb">
+      <DependentUpon>payment_reports_other_fees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\payment_reports_other_fees.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REPORTS\payment_reports_tuition.Designer.vb">
+      <DependentUpon>payment_reports_tuition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\payment_reports_tuition.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REPORTS\payment_reports_tuition_and_other_fees.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>payment_reports_tuition_and_other_fees.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="PROGRAM MODULES\ProgramFunctions.vb" />
+    <Compile Include="REPORTS\SamplePrint.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SamplePrint.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="INFORMATION\students_lists_college.Designer.vb">
+      <DependentUpon>students_lists_college.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INFORMATION\students_lists_college.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GRADING SYSTEM\student_grade_report.Designer.vb">
+      <DependentUpon>student_grade_report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GRADING SYSTEM\student_grade_report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GRADING SYSTEM\student_grade_report_report.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>student_grade_report_report.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="GRADING SYSTEM\student_grade_report_browse_student.Designer.vb">
+      <DependentUpon>student_grade_report_browse_student.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GRADING SYSTEM\student_grade_report_browse_student.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INFORMATION\student_information_entry.Designer.vb">
+      <DependentUpon>student_information_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INFORMATION\student_information_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INFORMATION\student_information_import.Designer.vb">
+      <DependentUpon>student_information_import.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INFORMATION\student_information_import.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INFORMATION\student_information_student_type.Designer.vb">
+      <DependentUpon>student_information_student_type.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INFORMATION\student_information_student_type.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INFORMATION\student_information.Designer.vb">
+      <DependentUpon>student_information.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INFORMATION\student_information.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_student_pull_out.Designer.vb">
+      <DependentUpon>frm_student_pull_out.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_student_pull_out.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_subject_setter_subject_list.Designer.vb">
+      <DependentUpon>frm_subject_setter_subject_list.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_subject_setter_subject_list.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_subject_setter.Designer.vb">
+      <DependentUpon>frm_subject_setter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_subject_setter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_settings_tuition_fee_list_entry.Designer.vb">
+      <DependentUpon>frm_settings_tuition_fee_list_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_settings_tuition_fee_list_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_college_settings_yrlvl_entry.Designer.vb">
+      <DependentUpon>frm_college_settings_yrlvl_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_college_settings_yrlvl_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_college_settings_yrlvl_lists.Designer.vb">
+      <DependentUpon>frm_college_settings_yrlvl_lists.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOOL SETTINGS\frm_college_settings_yrlvl_lists.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="CUSTOM CONTROLS\MyButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CUSTOM CONTROLS\My_Label.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PROGRAM MODULES\Program_Connection.vb" />
+    <Compile Include="PROGRAM MODULES\Program_Functions.vb" />
+    <Compile Include="PROGRAM MODULES\Program_Loaders.vb" />
+    <Compile Include="PROGRAM MODULES\Program_Variables.vb" />
+    <Compile Include="REPORTS\report_assessment_highschool.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>report_assessment_highschool.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\report_assessment_college.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>report_assessment_college.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\report_payment.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>report_payment.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\report_soa.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>report_soa.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="INFORMATION\student_lists_junior_high.Designer.vb">
+      <DependentUpon>student_lists_junior_high.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INFORMATION\student_lists_junior_high.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="INFORMATION\student_lists_senior_high.Designer.vb">
+      <DependentUpon>student_lists_senior_high.vb</DependentUpon>
+    </Compile>
+    <Compile Include="INFORMATION\student_lists_senior_high.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CUSTOM CONTROLS\PlaceHolderTextbox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CUSTOM CONTROLS\TextBoxWithPlaceHolder.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="REPORTS\enrolled_college.Designer.vb">
+      <DependentUpon>enrolled_college.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTS\enrolled_college.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SETTINGS USER\frm_users_lists.Designer.vb">
+      <DependentUpon>frm_users_lists.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SETTINGS USER\frm_users_lists.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VOUCHER SYSTEM\frm_voucher_account_entry.Designer.vb">
+      <DependentUpon>frm_voucher_account_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VOUCHER SYSTEM\frm_voucher_account_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VOUCHER SYSTEM\frm_voucher_account_list.Designer.vb">
+      <DependentUpon>frm_voucher_account_list.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VOUCHER SYSTEM\frm_voucher_account_list.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VOUCHER SYSTEM\frm_voucher_account_transaction.Designer.vb">
+      <DependentUpon>frm_voucher_account_transaction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VOUCHER SYSTEM\frm_voucher_account_transaction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VOUCHER SYSTEM\frm_voucher_account_transaction_entry.Designer.vb">
+      <DependentUpon>frm_voucher_account_transaction_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VOUCHER SYSTEM\frm_voucher_account_transaction_entry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ASSESSMENT\frm_assessment_lists.resx">
+      <DependentUpon>frm_assessment_lists.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASSESSMENT\frm_college_assessment_copier.resx">
+      <DependentUpon>frm_college_assessment_copier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASSESSMENT\frm_elementary_assessment.resx">
+      <DependentUpon>frm_elementary_assessment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASSESSMENT\frm_elementary_assessment_browse_students.resx">
+      <DependentUpon>frm_elementary_assessment_browse_students.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASSESSMENT\frm_highschool_assessment_old.resx">
+      <DependentUpon>frm_highschool_assessment_old.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASSESSMENT\frm_college_assessment_viewing.resx">
+      <DependentUpon>frm_college_assessment_viewing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASSESSMENT\frm_old_balance_checker.resx">
+      <DependentUpon>frm_old_balance_checker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASSESSMENT\frm_pre_elementary_assessment.resx">
+      <DependentUpon>frm_pre_elementary_assessment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASSESSMENT\frm_pre_elementary_assessment_browse_student.resx">
+      <DependentUpon>frm_pre_elementary_assessment_browse_student.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COLLEGE ASSESSMENT\frm_college_assessment_browser_mfee.resx">
+      <DependentUpon>frm_college_assessment_browser_mfee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COLLEGE ASSESSMENT\frm_college_assessment_browser_schedule.resx">
+      <DependentUpon>frm_college_assessment_browser_schedule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COLLEGE ASSESSMENT\frm_college_assessment_browser_subject_new_curriculum.resx">
+      <DependentUpon>frm_college_assessment_browser_subject_new_curriculum.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COLLEGE ASSESSMENT\frm_college_assessment_entry.resx">
+      <DependentUpon>frm_college_assessment_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COLLEGE ASSESSMENT\frm_college_assessment_browser_students.resx">
+      <DependentUpon>frm_college_assessment_browser_students.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COLLEGE ASSESSMENT\frm_college_assessment_browser_subject.resx">
+      <DependentUpon>frm_college_assessment_browser_subject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COLLEGE ASSESSMENT\frm_college_assessment_old_assessment.resx">
+      <DependentUpon>frm_college_assessment_old_assessment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COLLEGE ASSESSMENT\frm_dropping.resx">
+      <DependentUpon>frm_dropping.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COLLEGE REGISTRATION\frm_college_registration_bridge_subjects.resx">
+      <DependentUpon>frm_college_registration_bridge_subjects.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COLLEGE REGISTRATION\frm_college_registration_browse_students.resx">
+      <DependentUpon>frm_college_registration_browse_students.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COLLEGE REGISTRATION\frm_college_registration_edit.resx">
+      <DependentUpon>frm_college_registration_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COLLEGE REGISTRATION\frm_college_registration_entry.resx">
+      <DependentUpon>frm_college_registration_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COLLEGE REGISTRATION\frm_college_registration_lists.resx">
+      <DependentUpon>frm_college_registration_lists.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COLLEGE SETTINGS\frm_settings_college_miscellaneous_add.resx">
+      <DependentUpon>frm_settings_college_miscellaneous_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COLLEGE SETTINGS\frm_settings_college_tuition.resx">
+      <DependentUpon>frm_settings_college_tuition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COLLEGE SETTINGS\frm_settings_college_tuition_add_subjects.resx">
+      <DependentUpon>frm_settings_college_tuition_add_subjects.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COLLEGE SETTINGS\frm_settings_college_tuition_entry.resx">
+      <DependentUpon>frm_settings_college_tuition_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COLLEGE SETTINGS\frm_settings_college_tuition_lists.resx">
+      <DependentUpon>frm_settings_college_tuition_lists.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ENROLLMENT LIST\frm_enrollment_lists.resx">
+      <DependentUpon>frm_enrollment_lists.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ENROLLMENT LIST\rpt_enrollment_list_summary.rdlc" />
+    <EmbeddedResource Include="ENROLLMENT LIST\rpt_enrollment_list.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ENROLLMENT LIST\TestReport.rdlc" />
+    <EmbeddedResource Include="FACULTY\frm_faculty_account.resx">
+      <DependentUpon>frm_faculty_account.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FACULTY\frm_faculty_lists.resx">
+      <DependentUpon>frm_faculty_lists.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FACULTY\frm_faculty_lists_entry.resx">
+      <DependentUpon>frm_faculty_lists_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_dummy.resx">
+      <DependentUpon>frm_dummy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_lists_assessed_students.resx">
+      <DependentUpon>frm_lists_assessed_students.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_login.resx">
+      <DependentUpon>frm_login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_main2.resx">
+      <DependentUpon>frm_main2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GRADING SYSTEM\frm_deans_lister.resx">
+      <DependentUpon>frm_deans_lister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GRADING SYSTEM\frm_deans_lister_candidates.resx">
+      <DependentUpon>frm_deans_lister_candidates.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GRADING SYSTEM\rpt_deans_lister.rdlc" />
+    <EmbeddedResource Include="GRADING SYSTEM\student_grade_report.rdlc" />
+    <EmbeddedResource Include="HIGH SCHOOL\SETTINGS\frm_settings_tuition_miscellaneous_entry.resx">
+      <DependentUpon>frm_settings_tuition_miscellaneous_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HIGH SCHOOL\SETTINGS\frm_settings_tuition_miscellaneous_lists.resx">
+      <DependentUpon>frm_settings_tuition_miscellaneous_lists.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INFORMATION\frm_lrn_entry.resx">
+      <DependentUpon>frm_lrn_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INFORMATION\frm_main_official.resx">
+      <DependentUpon>frm_main_official.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INFORMATION\students_lists_elementary.resx">
+      <DependentUpon>students_lists_elementary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INFORMATION\student_lists_pre_elementary.resx">
+      <DependentUpon>student_lists_pre_elementary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainOfficial.resx">
+      <DependentUpon>MainOfficial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NON STUDENTS\frm_edit_non_student_fee.resx">
+      <DependentUpon>frm_edit_non_student_fee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NON STUDENTS\frm_nonstudent_account.resx">
+      <DependentUpon>frm_nonstudent_account.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NON STUDENTS\frm_nonstudent_charge_fee.resx">
+      <DependentUpon>frm_nonstudent_charge_fee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NON STUDENTS\frm_nonstudent_lists.resx">
+      <DependentUpon>frm_nonstudent_lists.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NON STUDENTS\frm_nonstudent_lists_entry.resx">
+      <DependentUpon>frm_nonstudent_lists_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NON STUDENTS\frm_nonstudent_payment_cash.resx">
+      <DependentUpon>frm_nonstudent_payment_cash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NON STUDENTS\frm_nonstudent_browse.resx">
+      <DependentUpon>frm_nonstudent_browse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NON STUDENTS\rpt_medical_arts_recievables.rdlc" />
+    <EmbeddedResource Include="NON STUDENTS\rpt_statement_of_account_nonstudent.rdlc" />
+    <EmbeddedResource Include="PAYMENT\frm_browse_student_additional_fees.resx">
+      <DependentUpon>frm_browse_student_additional_fees.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAYMENT\frm_payment_transfer.resx">
+      <DependentUpon>frm_payment_transfer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAYMENT\RPT_StatementOfAccount.rdlc" />
+    <EmbeddedResource Include="REGISTRATION\frm_registered_pre_elementary_students.resx">
+      <DependentUpon>frm_registered_pre_elementary_students.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REGISTRATION\frm_registration_elementary_edit.resx">
+      <DependentUpon>frm_registration_elementary_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RDLCReporting.resx">
+      <DependentUpon>RDLCReporting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REGISTRATION\frm_registered_elementary_students.resx">
+      <DependentUpon>frm_registered_elementary_students.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REGISTRATION\frm_registration_elementary_entry.resx">
+      <DependentUpon>frm_registration_elementary_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REGISTRATION\frm_registration_pre_elementary_edit.resx">
+      <DependentUpon>frm_registration_pre_elementary_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REGISTRATION\frm_registration_pre_elementary_entry.resx">
+      <DependentUpon>frm_registration_pre_elementary_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REGISTRATION\frm_registration_seniorhigh_edit.resx">
+      <DependentUpon>frm_registration_seniorhigh_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="REPORTS\BALANCE CHECKER\frm_balance_checker_revised.resx">
+      <DependentUpon>frm_balance_checker_revised.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\CERTIFICATION\frm_certifications_entry.resx">
+      <DependentUpon>frm_certifications_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\CERTIFICATION\rpt_COR.rdlc" />
+    <EmbeddedResource Include="REPORTS\frm_available_subjects.resx">
+      <DependentUpon>frm_available_subjects.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\frm_balance_checker.resx">
+      <DependentUpon>frm_balance_checker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\frm_chart_report.resx">
+      <DependentUpon>frm_chart_report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\MASTERLIST\frm_college_masterlists.resx">
+      <DependentUpon>frm_college_masterlists.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\frm_graduating_students.resx">
+      <DependentUpon>frm_graduating_students.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\frm_highschool_enrolled.resx">
+      <DependentUpon>frm_highschool_enrolled.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\frm_masterlist.resx">
+      <DependentUpon>frm_masterlist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\MASTERLIST\frm_college_masterlist_breakdown.resx">
+      <DependentUpon>frm_college_masterlist_breakdown.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\MASTERLIST\frm_masterlists_junior.resx">
+      <DependentUpon>frm_masterlists_junior.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\MASTERLIST\frm_masterlists_senior.resx">
+      <DependentUpon>frm_masterlists_senior.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\frm_report.resx">
+      <DependentUpon>frm_report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\MasterListsReport.rdlc" />
+    <EmbeddedResource Include="PAYMENT\frm_payment_edit_other_fees.resx">
+      <DependentUpon>frm_payment_edit_other_fees.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\frm_rdlc_report.resx">
+      <DependentUpon>frm_rdlc_report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GENERAL\COLM_Main.resx">
+      <DependentUpon>COLM_Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\enrolled_college.resx">
+      <DependentUpon>enrolled_college.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\enrolled_junior_high.resx">
+      <DependentUpon>enrolled_junior_high.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\enrolled_senior_high.resx">
+      <DependentUpon>enrolled_senior_high.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASSESSMENT\frm_college_assessment_browse_schedule.resx">
+      <DependentUpon>frm_college_assessment_browse_schedule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASSESSMENT\frm_college_assessment_browse_subject.resx">
+      <DependentUpon>frm_college_assessment_browse_subject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASSESSMENT\frm_college_assessment_browse_fees.resx">
+      <DependentUpon>frm_college_assessment_browse_fees.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASSESSMENT\frm_college_assessment_subject_list.resx">
+      <DependentUpon>frm_college_assessment_subject_list.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\payment_reports_medical_arts.resx">
+      <DependentUpon>payment_reports_medical_arts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\payment_reports_nonstudent.resx">
+      <DependentUpon>payment_reports_nonstudent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\payment_reports_tuition_and_other_fees.rdlc" />
+    <EmbeddedResource Include="REPORTS\report_assessment_seniorhigh.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>report_assessment_seniorhigh.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\report_masterlists_junior.rdlc" />
+    <EmbeddedResource Include="REPORTS\report_masterlists_senior.rdlc" />
+    <EmbeddedResource Include="REPORTS\report_payment.rdlc" />
+    <EmbeddedResource Include="REPORTS\rpt_assessment_senior.rdlc" />
+    <EmbeddedResource Include="REPORTS\rpt_graduating_students.rdlc" />
+    <EmbeddedResource Include="REPORTS\rpt_masterlists_college_section.rdlc" />
+    <EmbeddedResource Include="REPORTS\rtp_assessment_college.rdlc" />
+    <EmbeddedResource Include="REPORTS\VOUCHER\frm_voucher_report.resx">
+      <DependentUpon>frm_voucher_report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\VOUCHER\rpt_voucher.rdlc" />
+    <EmbeddedResource Include="RFID\frm_rfid_entry.resx">
+      <DependentUpon>frm_rfid_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RFID\frm_rfid_registered_lists.resx">
+      <DependentUpon>frm_rfid_registered_lists.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RFID\frm_rfid_unregistered_lists.resx">
+      <DependentUpon>frm_rfid_unregistered_lists.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_hs_student_assessment.rdlc" />
+    <EmbeddedResource Include="SCHEDULE\frm_schedule_entry.resx">
+      <DependentUpon>frm_schedule_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHEDULE\frm_schedule_lists.resx">
+      <DependentUpon>frm_schedule_lists.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHEDULE\frm_schedule_unlisted_subjects.resx">
+      <DependentUpon>frm_schedule_unlisted_subjects.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHOOL SETTINGS\frm_college_curriculum.resx">
+      <DependentUpon>frm_college_curriculum.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHOOL SETTINGS\frm_college_curriculum_filtering.resx">
+      <DependentUpon>frm_college_curriculum_filtering.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAYMENT\frm_college_settings_external_fees.resx">
+      <DependentUpon>frm_college_settings_external_fees.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHOOL SETTINGS\frm_college_settings_section_entry_list.resx">
+      <DependentUpon>frm_college_settings_section_entry_list.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHOOL SETTINGS\frm_college_settings_course_list.resx">
+      <DependentUpon>frm_college_settings_course_list.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHOOL SETTINGS\frm_college_settings_department_list_entry.resx">
+      <DependentUpon>frm_college_settings_department_list_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASSESSMENT\frm_highschool_assessment.resx">
+      <DependentUpon>frm_highschool_assessment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASSESSMENT\frm_highschool_assessment_browse_student.resx">
+      <DependentUpon>frm_highschool_assessment_browse_student.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHOOL SETTINGS\frm_college_settings_section_subject_entry.resx">
+      <DependentUpon>frm_college_settings_section_subject_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHOOL SETTINGS\frm_highschool_settings_external_fees.resx">
+      <DependentUpon>frm_highschool_settings_external_fees.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHOOL SETTINGS\frm_highschool_settings_section_lists_entry.resx">
+      <DependentUpon>frm_highschool_settings_section_lists_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHOOL SETTINGS\frm_highschool_settings_seniorhigh_courses.resx">
+      <DependentUpon>frm_highschool_settings_seniorhigh_courses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAYMENT\frm_payers_lists.resx">
+      <DependentUpon>frm_payers_lists.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAYMENT\frm_payers_registration.resx">
+      <DependentUpon>frm_payers_registration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAYMENT\frm_payment_cm_other_entry.resx">
+      <DependentUpon>frm_payment_cm_other_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAYMENT\frm_payment_non_student.resx">
+      <DependentUpon>frm_payment_non_student.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAYMENT\frm_payment_non_student_browse_payer.resx">
+      <DependentUpon>frm_payment_non_student_browse_payer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAYMENT\frm_payment_non_student_internal_lists.resx">
+      <DependentUpon>frm_payment_non_student_internal_lists.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REGISTRATION\frm_registration_college_edit.resx">
+      <DependentUpon>frm_registration_college_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REGISTRATION\frm_registration_highschool_edit.resx">
+      <DependentUpon>frm_registration_highschool_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\frm_report_officially_enrolled.resx">
+      <DependentUpon>frm_report_officially_enrolled.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GENERAL\MainHome.resx">
+      <DependentUpon>MainHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\payment_reports.resx">
+      <DependentUpon>payment_reports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHOOL SETTINGS\frm_settings_external_fees.resx">
+      <DependentUpon>frm_settings_external_fees.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHOOL SETTINGS\frm_settings_internal_fees.resx">
+      <DependentUpon>frm_settings_internal_fees.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAYMENT\frm_payment.resx">
+      <DependentUpon>frm_payment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAYMENT\frm_payment_browse_student.resx">
+      <DependentUpon>frm_payment_browse_student.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAYMENT\frm_payment_cash_other_entry.resx">
+      <DependentUpon>frm_payment_cash_other_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAYMENT\frm_payment_cash_tuition_entry.resx">
+      <DependentUpon>frm_payment_cash_tuition_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAYMENT\frm_payment_cm_tuition_entry.resx">
+      <DependentUpon>frm_payment_cm_tuition_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAYMENT\frm_payment_internal_list.resx">
+      <DependentUpon>frm_payment_internal_list.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REGISTRATION\frm_registered_college_students.resx">
+      <DependentUpon>frm_registered_college_students.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REGISTRATION\frm_registered_highschool_students.resx">
+      <DependentUpon>frm_registered_highschool_students.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REGISTRATION\frm_registered_seniorhigh_students.resx">
+      <DependentUpon>frm_registered_seniorhigh_students.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REGISTRATION\frm_registration_highschool_entry.resx">
+      <DependentUpon>frm_registration_highschool_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REGISTRATION\frm_registration_seniorhigh_entry.resx">
+      <DependentUpon>frm_registration_seniorhigh_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\frm_report_assessment.resx">
+      <DependentUpon>frm_report_assessment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHOOL SETTINGS\frm_schedule_entry_2.resx">
+      <DependentUpon>frm_schedule_entry_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASSESSMENT\frm_college_assessment_browse_students.resx">
+      <DependentUpon>frm_college_assessment_browse_students.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASSESSMENT\frm_college_assessment.resx">
+      <DependentUpon>frm_college_assessment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHOOL SETTINGS\frm_college_settings_course_entry.resx">
+      <DependentUpon>frm_college_settings_course_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHOOL SETTINGS\frm_college_curriculum_entry.resx">
+      <DependentUpon>frm_college_curriculum_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHOOL SETTINGS\frm_faculty_entry.resx">
+      <DependentUpon>frm_faculty_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHOOL SETTINGS\frm_faculty_List.resx">
+      <DependentUpon>frm_faculty_List.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHOOL SETTINGS\frm_faculty_subjects_entry.resx">
+      <DependentUpon>frm_faculty_subjects_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_main.resx">
+      <DependentUpon>frm_main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHOOL SETTINGS\frm_highschool_settings_yrlvl_lists_entry.resx">
+      <DependentUpon>frm_highschool_settings_yrlvl_lists_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHOOL SETTINGS\frm_settings_discounts.resx">
+      <DependentUpon>frm_settings_discounts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHOOL SETTINGS\frm_settings_maximum_students.resx">
+      <DependentUpon>frm_settings_maximum_students.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHOOL SETTINGS\frm_settings_payments_lists.resx">
+      <DependentUpon>frm_settings_payments_lists.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHOOL SETTINGS\frm_settings_surcharge.resx">
+      <DependentUpon>frm_settings_surcharge.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHOOL SETTINGS\frm_program_settings.resx">
+      <DependentUpon>frm_program_settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REGISTRATION\frm_registration_college_entry.resx">
+      <DependentUpon>frm_registration_college_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\payment_reports_individual_other_fees.resx">
+      <DependentUpon>payment_reports_individual_other_fees.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\payment_reports_other_fees.resx">
+      <DependentUpon>payment_reports_other_fees.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\payment_reports_tuition.resx">
+      <DependentUpon>payment_reports_tuition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\payment_reports_tuition_and_other_fees.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>payment_reports_tuition_and_other_fees.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\SamplePrint.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SamplePrint.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAYMENT\SOA_Report.rdlc" />
+    <EmbeddedResource Include="INFORMATION\students_lists_college.resx">
+      <DependentUpon>students_lists_college.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GRADING SYSTEM\student_grade_report.resx">
+      <DependentUpon>student_grade_report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GRADING SYSTEM\student_grade_report_report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>student_grade_report_report.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GRADING SYSTEM\student_grade_report_browse_student.resx">
+      <DependentUpon>student_grade_report_browse_student.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INFORMATION\student_information_entry.resx">
+      <DependentUpon>student_information_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INFORMATION\student_information_import.resx">
+      <DependentUpon>student_information_import.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INFORMATION\student_information_student_type.resx">
+      <DependentUpon>student_information_student_type.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INFORMATION\student_information.resx">
+      <DependentUpon>student_information.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHOOL SETTINGS\frm_student_pull_out.resx">
+      <DependentUpon>frm_student_pull_out.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHOOL SETTINGS\frm_subject_setter_subject_list.resx">
+      <DependentUpon>frm_subject_setter_subject_list.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHOOL SETTINGS\frm_subject_setter.resx">
+      <DependentUpon>frm_subject_setter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHOOL SETTINGS\frm_settings_tuition_fee_list_entry.resx">
+      <DependentUpon>frm_settings_tuition_fee_list_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHOOL SETTINGS\frm_college_settings_yrlvl_entry.resx">
+      <DependentUpon>frm_college_settings_yrlvl_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHOOL SETTINGS\frm_college_settings_yrlvl_lists.resx">
+      <DependentUpon>frm_college_settings_yrlvl_lists.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\report_assessment_highschool.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>report_assessment_highschool.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\report_assessment_college.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>report_assessment_college.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\report_payment.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>report_payment.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTS\report_soa.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>report_soa.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INFORMATION\student_lists_junior_high.resx">
+      <DependentUpon>student_lists_junior_high.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INFORMATION\student_lists_senior_high.resx">
+      <DependentUpon>student_lists_senior_high.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SETTINGS USER\frm_users_lists.resx">
+      <DependentUpon>frm_users_lists.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VOUCHER SYSTEM\frm_voucher_account_entry.resx">
+      <DependentUpon>frm_voucher_account_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VOUCHER SYSTEM\frm_voucher_account_list.resx">
+      <DependentUpon>frm_voucher_account_list.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VOUCHER SYSTEM\frm_voucher_account_transaction.resx">
+      <DependentUpon>frm_voucher_account_transaction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VOUCHER SYSTEM\frm_voucher_account_transaction_entry.resx">
+      <DependentUpon>frm_voucher_account_transaction_entry.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ASSESSMENT\DS_ASSESSMENT.xsc">
+      <DependentUpon>DS_ASSESSMENT.xsd</DependentUpon>
+    </None>
+    <None Include="ASSESSMENT\DS_ASSESSMENT.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_ASSESSMENT.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="ASSESSMENT\DS_ASSESSMENT.xss">
+      <DependentUpon>DS_ASSESSMENT.xsd</DependentUpon>
+    </None>
+    <None Include="COLM ENROLLMENT SYSTEM_TemporaryKey.pfx" />
+    <None Include="DSTestImageReport.xsc">
+      <DependentUpon>DSTestImageReport.xsd</DependentUpon>
+    </None>
+    <None Include="DSTestImageReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSTestImageReport.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DSTestImageReport.xss">
+      <DependentUpon>DSTestImageReport.xsd</DependentUpon>
+    </None>
+    <None Include="DS_HS_Assessment.xsc">
+      <DependentUpon>DS_HS_Assessment.xsd</DependentUpon>
+    </None>
+    <None Include="DS_HS_Assessment.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_HS_Assessment.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DS_HS_Assessment.xss">
+      <DependentUpon>DS_HS_Assessment.xsd</DependentUpon>
+    </None>
+    <None Include="ENROLLMENT LIST\ds_enrollment_list.xsc">
+      <DependentUpon>ds_enrollment_list.xsd</DependentUpon>
+    </None>
+    <None Include="ENROLLMENT LIST\ds_enrollment_list.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds_enrollment_list.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="ENROLLMENT LIST\ds_enrollment_list.xss">
+      <DependentUpon>ds_enrollment_list.xsd</DependentUpon>
+    </None>
+    <None Include="GRADING SYSTEM\DS_DeansLister.xsc">
+      <DependentUpon>DS_DeansLister.xsd</DependentUpon>
+    </None>
+    <None Include="GRADING SYSTEM\DS_DeansLister.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_DeansLister.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="GRADING SYSTEM\DS_DeansLister.xss">
+      <DependentUpon>DS_DeansLister.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="NON STUDENTS\DS_NonStudentSOA.xsc">
+      <DependentUpon>DS_NonStudentSOA.xsd</DependentUpon>
+    </None>
+    <None Include="NON STUDENTS\DS_NonStudentSOA.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_NonStudentSOA.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="NON STUDENTS\DS_NonStudentSOA.xss">
+      <DependentUpon>DS_NonStudentSOA.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="PAYMENT\DS_CREDIT_MEMO.xsc">
+      <DependentUpon>DS_CREDIT_MEMO.xsd</DependentUpon>
+    </None>
+    <None Include="PAYMENT\DS_CREDIT_MEMO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_CREDIT_MEMO1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="PAYMENT\DS_CREDIT_MEMO.xss">
+      <DependentUpon>DS_CREDIT_MEMO.xsd</DependentUpon>
+    </None>
+    <None Include="INFORMATION\DS_Loaders.xsc">
+      <DependentUpon>DS_Loaders.xsd</DependentUpon>
+    </None>
+    <None Include="INFORMATION\DS_Loaders.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Loaders.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="INFORMATION\DS_Loaders.xss">
+      <DependentUpon>DS_Loaders.xsd</DependentUpon>
+    </None>
+    <None Include="PAYMENT\DS_PAYMENT.xsc">
+      <DependentUpon>DS_PAYMENT.xsd</DependentUpon>
+    </None>
+    <None Include="PAYMENT\DS_PAYMENT.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_PAYMENT.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="PAYMENT\DS_PAYMENT.xss">
+      <DependentUpon>DS_PAYMENT.xsd</DependentUpon>
+    </None>
+    <None Include="PAYMENT\DS_PaymentTransactions.xsc">
+      <DependentUpon>DS_PaymentTransactions.xsd</DependentUpon>
+    </None>
+    <None Include="PAYMENT\DS_PaymentTransactions.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_PaymentTransactions.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="PAYMENT\DS_PaymentTransactions.xss">
+      <DependentUpon>DS_PaymentTransactions.xsd</DependentUpon>
+    </None>
+    <None Include="GRADING SYSTEM\DS_SGR.xsc">
+      <DependentUpon>DS_SGR.xsd</DependentUpon>
+    </None>
+    <None Include="GRADING SYSTEM\DS_SGR.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_SGR.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="GRADING SYSTEM\DS_SGR.xss">
+      <DependentUpon>DS_SGR.xsd</DependentUpon>
+    </None>
+    <None Include="REPORTS\DS_GraduatingStudents.xsc">
+      <DependentUpon>DS_GraduatingStudents.xsd</DependentUpon>
+    </None>
+    <None Include="REPORTS\DS_GraduatingStudents.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_GraduatingStudents.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="REPORTS\DS_GraduatingStudents.xss">
+      <DependentUpon>DS_GraduatingStudents.xsd</DependentUpon>
+    </None>
+    <None Include="REPORTS\DS_JuniorHigh_Masterlist.xsc">
+      <DependentUpon>DS_JuniorHigh_Masterlist.xsd</DependentUpon>
+    </None>
+    <None Include="REPORTS\DS_JuniorHigh_Masterlist.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_JuniorHigh_Masterlist.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="REPORTS\DS_JuniorHigh_Masterlist.xss">
+      <DependentUpon>DS_JuniorHigh_Masterlist.xsd</DependentUpon>
+    </None>
+    <None Include="REPORTS\DS_Masterlists_College_Section.xsc">
+      <DependentUpon>DS_Masterlists_College_Section.xsd</DependentUpon>
+    </None>
+    <None Include="REPORTS\DS_Masterlists_College_Section.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Masterlists_College_Section.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="REPORTS\DS_Masterlists_College_Section.xss">
+      <DependentUpon>DS_Masterlists_College_Section.xsd</DependentUpon>
+    </None>
+    <None Include="REPORTS\DS_PaymentSchedule.xsc">
+      <DependentUpon>DS_PaymentSchedule.xsd</DependentUpon>
+    </None>
+    <None Include="REPORTS\DS_PaymentSchedule.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_PaymentSchedule.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="REPORTS\DS_PaymentSchedule.xss">
+      <DependentUpon>DS_PaymentSchedule.xsd</DependentUpon>
+    </None>
+    <None Include="REPORTS\DS_SeniorHigh_Masterlist.xsc">
+      <DependentUpon>DS_SeniorHigh_Masterlist.xsd</DependentUpon>
+    </None>
+    <None Include="REPORTS\DS_SeniorHigh_Masterlist.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_SeniorHigh_Masterlist.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="REPORTS\DS_SeniorHigh_Masterlist.xss">
+      <DependentUpon>DS_SeniorHigh_Masterlist.xsd</DependentUpon>
+    </None>
+    <None Include="REPORTS\MasterLIstsDataSet.xsc">
+      <DependentUpon>MasterLIstsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="REPORTS\MasterLIstsDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MasterLIstsDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="REPORTS\MasterLIstsDataSet.xss">
+      <DependentUpon>MasterLIstsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PAYMENT\DS_SOA.xsc">
+      <DependentUpon>DS_SOA.xsd</DependentUpon>
+    </None>
+    <None Include="PAYMENT\DS_SOA.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_SOA.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="PAYMENT\DS_SOA.xss">
+      <DependentUpon>DS_SOA.xsd</DependentUpon>
+    </None>
+    <None Include="REPORTS\VOUCHER\DS_Voucher.xsc">
+      <DependentUpon>DS_Voucher.xsd</DependentUpon>
+    </None>
+    <None Include="REPORTS\VOUCHER\DS_Voucher.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Voucher.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="REPORTS\VOUCHER\DS_Voucher.xss">
+      <DependentUpon>DS_Voucher.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\Close Marron.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USER.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings - 11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SMALL-LOGO.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CURRICULUM\" />
+    <Folder Include="HIGH SCHOOL\ASSESSMENT\" />
+    <Folder Include="MANAGEMENT\" />
+    <Folder Include="SUBJECT REGISTRATION AND SCHEDULE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Students.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Registration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Assessment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Account Green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Assessment Green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Payment Green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings Green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Students Green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home Green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Registration Green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Account White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Assessment White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Payment White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Payment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Registration White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Students White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGES\Account_Info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGES\Payment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGES\Student_Assessment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGES\Student_Information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGES\Student_Lists.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGES\Student_Registration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="CrystalDecisions.CrystalReports.Engine">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ClientDoc">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommLayer">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonControls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Controllers">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CubeDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataSetConversion">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ObjectFactory">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Prompting">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ReportDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.XmlSerialize">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportSource">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Shared">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Windows.Forms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="FlashControlV71">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.Common">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.DataVisualization">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.WinForms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Types">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="ShockwaveFlashObjects">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\Loader.cs" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

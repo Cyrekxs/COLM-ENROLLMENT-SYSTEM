@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_PaymentTransactions" targetNamespace="http://tempuri.org/DS_PaymentTransactions.xsd" xmlns:mstns="http://tempuri.org/DS_PaymentTransactions.xsd" xmlns="http://tempuri.org/DS_PaymentTransactions.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_PaymentTransactions" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_PaymentTransactions" msprop:Generator_UserDSName="DS_PaymentTransactions">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DT_PaymentTransactions" msprop:Generator_TableClassName="DT_PaymentTransactionsDataTable" msprop:Generator_TableVarName="tableDT_PaymentTransactions" msprop:Generator_TablePropName="DT_PaymentTransactions" msprop:Generator_RowDeletingName="DT_PaymentTransactionsRowDeleting" msprop:Generator_RowChangingName="DT_PaymentTransactionsRowChanging" msprop:Generator_RowEvHandlerName="DT_PaymentTransactionsRowChangeEventHandler" msprop:Generator_RowDeletedName="DT_PaymentTransactionsRowDeleted" msprop:Generator_UserTableName="DT_PaymentTransactions" msprop:Generator_RowChangedName="DT_PaymentTransactionsRowChanged" msprop:Generator_RowEvArgName="DT_PaymentTransactionsRowChangeEvent" msprop:Generator_RowClassName="DT_PaymentTransactionsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TXDate" msprop:Generator_ColumnVarNameInTable="columnTXDate" msprop:Generator_ColumnPropNameInRow="TXDate" msprop:Generator_ColumnPropNameInTable="TXDateColumn" msprop:Generator_UserColumnName="TXDate" type="xs:string" minOccurs="0" />
+              <xs:element name="TXType" msprop:Generator_ColumnVarNameInTable="columnTXType" msprop:Generator_ColumnPropNameInRow="TXType" msprop:Generator_ColumnPropNameInTable="TXTypeColumn" msprop:Generator_UserColumnName="TXType" type="xs:string" minOccurs="0" />
+              <xs:element name="RecieptNo" msprop:Generator_ColumnVarNameInTable="columnRecieptNo" msprop:Generator_ColumnPropNameInRow="RecieptNo" msprop:Generator_ColumnPropNameInTable="RecieptNoColumn" msprop:Generator_UserColumnName="RecieptNo" type="xs:string" minOccurs="0" />
+              <xs:element name="RecieptStatus" msprop:Generator_ColumnVarNameInTable="columnRecieptStatus" msprop:Generator_ColumnPropNameInRow="RecieptStatus" msprop:Generator_ColumnPropNameInTable="RecieptStatusColumn" msprop:Generator_UserColumnName="RecieptStatus" type="xs:string" minOccurs="0" />
+              <xs:element name="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_UserColumnName="Amount" type="xs:string" minOccurs="0" />
+              <xs:element name="StudentNo" msprop:Generator_ColumnVarNameInTable="columnStudentNo" msprop:Generator_ColumnPropNameInRow="StudentNo" msprop:Generator_ColumnPropNameInTable="StudentNoColumn" msprop:Generator_UserColumnName="StudentNo" type="xs:string" minOccurs="0" />
+              <xs:element name="StudentName" msprop:Generator_ColumnVarNameInTable="columnStudentName" msprop:Generator_ColumnPropNameInRow="StudentName" msprop:Generator_ColumnPropNameInTable="StudentNameColumn" msprop:Generator_UserColumnName="StudentName" type="xs:string" minOccurs="0" />
+              <xs:element name="EducationLevel" msprop:Generator_ColumnVarNameInTable="columnEducationLevel" msprop:Generator_ColumnPropNameInRow="EducationLevel" msprop:Generator_ColumnPropNameInTable="EducationLevelColumn" msprop:Generator_UserColumnName="EducationLevel" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
