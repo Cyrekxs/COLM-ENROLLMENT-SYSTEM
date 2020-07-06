@@ -21,8 +21,12 @@ Public Class frm_elementary_assessment
         Dim Old_Balance As Double = 0 'OLD Balance
         Dim TFee As Double = 0 'TUITION FEE
         Dim MFee As Double = 0 'MISCELLANEOUS
+
         Dim V_Amount As Double = 0 'VOUCHER AMOUNT
         Dim D_Amount As Double = 0 'DISCOUNT AMOUNT
+        Dim DD_Amount As Double = 0 'DIRECT DISCOUNT
+        Dim DD_AmountCopy As Double = 0 'DIRECT DISCOUNT AMOUNT COPY
+
         Dim Total_Surcharge As Double = 0 'SURCHARGE
         Dim Surcharge_Multiplier As Integer = 0 'SURCHARGE MULTIPLIER
         Dim Deducation As Double = 0 'DEDUCTIONS
@@ -39,26 +43,11 @@ Public Class frm_elementary_assessment
         TFee = TFee - D_Amount
         V_Amount = txtVoucherAmount.Text
 
-        'MFEE
-        If V_Amount > MFee Then
-            V_Amount = V_Amount - MFee
-            MFee = 0
-            If MFee <= 0 Then
-                MFee = 0
-            End If
-        End If
+        DD_Amount = CDbl(txtDirectDiscount.Text)
+        DD_AmountCopy = DD_Amount / 2
 
-        'TFEE
-        If V_Amount > TFee Then
-            V_Amount = V_Amount - TFee
-            TFee = TFee - V_Amount
-            If TFee <= 0 Then
-                TFee = 0
-            End If
-        Else
-            TFee = TFee - V_Amount
-            V_Amount = 0
-        End If
+        TFee = TFee - DD_AmountCopy
+        MFee = MFee - DD_AmountCopy
 
         Total_Surcharge = txtSurcharge.Text
 
@@ -66,6 +55,7 @@ Public Class frm_elementary_assessment
         Deducation = CDbl(txtVoucherAmount.Text) + CDbl(txtDiscountAmount.Text)
 
         Net_Amount = (Gross_Amount - Deducation) + Total_Surcharge
+        Net_Amount = (Net_Amount - DD_Amount)
         Net_Amount_Copy = Net_Amount
         '----------------------------------------------------------
 
@@ -397,7 +387,7 @@ Public Class frm_elementary_assessment
                     comm.Parameters.AddWithValue("@discount_percentage", txtDiscountPercentage.Text)
                     comm.Parameters.AddWithValue("@discount_amount", txtDiscountAmount.Text)
                     comm.Parameters.AddWithValue("@HonorCode", cmbHonorDiscount.Text)
-                    comm.Parameters.AddWithValue("@directdiscount", 0)
+                    comm.Parameters.AddWithValue("@directdiscount", txtDirectDiscount.Text)
                     comm.Parameters.AddWithValue("@surcharge", txtSurcharge.Text)
                     comm.Parameters.AddWithValue("@total", txtNetFee.Text)
                     comm.Parameters.AddWithValue("@assessment_type", cmbAssessment.Text)
@@ -423,7 +413,7 @@ Public Class frm_elementary_assessment
             ElseIf AssessmentStatus = "RE-ASSESSMENT" Then
 
                 'TBL_COLLEGE_ASSESSMENT_SUMMARY
-                Using comm As New SqlCommand("UPDATE TBL_COLLEGE_ASSESSMENT_SUMMARY SET STUDENT_NUMBER = @sn, COURSE_CODE = @course_code, YRLVL = @yrlvl, SECT_CODE = @sect_code, TFEE = @tfee, MFEE = @mfee, OFEE = @ofee, VOUCHER_CODE = @voucher_code, VOUCHER_AMOUNT = @voucher_amount, DISCOUNT_CODE = @discount_code, DISCOUNT_PERCENTAGE = @discount_percentage, DISCOUNT_AMOUNT = @discount_amount,Academic_Scholar = @HonorCode, SURCHARGE = @surcharge, OLD_BALANCE = @old_balance, TOTAL = @total, ASSESSMENT_TYPE = @assessment_type, ACADEMIC_YR = @ay, ASSESS_BY = @assess_by, ASSESSED_DATE = GETDATE() WHERE ID = @id", conn)
+                Using comm As New SqlCommand("UPDATE TBL_COLLEGE_ASSESSMENT_SUMMARY SET STUDENT_NUMBER = @sn, COURSE_CODE = @course_code, YRLVL = @yrlvl, SECT_CODE = @sect_code, TFEE = @tfee, MFEE = @mfee, OFEE = @ofee, VOUCHER_CODE = @voucher_code, VOUCHER_AMOUNT = @voucher_amount, DISCOUNT_CODE = @discount_code, DISCOUNT_PERCENTAGE = @discount_percentage, DISCOUNT_AMOUNT = @discount_amount,Academic_Scholar = @HonorCode, Direct_Discount = @DirectDiscount, SURCHARGE = @surcharge, OLD_BALANCE = @old_balance, TOTAL = @total, ASSESSMENT_TYPE = @assessment_type, ACADEMIC_YR = @ay, ASSESS_BY = @assess_by, ASSESSED_DATE = GETDATE() WHERE ID = @id", conn)
                     comm.Parameters.AddWithValue("@id", Assessment_ID)
                     comm.Parameters.AddWithValue("@education_level", EducationLevel)
                     comm.Parameters.AddWithValue("@sn", txtStudentNumber.Text)
@@ -441,6 +431,7 @@ Public Class frm_elementary_assessment
                     comm.Parameters.AddWithValue("@discount_percentage", txtDiscountPercentage.Text)
                     comm.Parameters.AddWithValue("@discount_amount", txtDiscountAmount.Text)
                     comm.Parameters.AddWithValue("@HonorCode", cmbHonorDiscount.Text)
+                    comm.Parameters.AddWithValue("@DirectDiscount", txtDirectDiscount.Text)
                     comm.Parameters.AddWithValue("@surcharge", txtSurcharge.Text)
                     comm.Parameters.AddWithValue("@total", txtNetFee.Text)
                     comm.Parameters.AddWithValue("@assessment_type", cmbAssessment.Text)
@@ -628,5 +619,15 @@ Public Class frm_elementary_assessment
 
     Private Sub cmbAssessment_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbAssessment.SelectedIndexChanged
 
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Dim x = InputBox("Please enter a direct discount amount", "DIRECT DISCOUNT")
+        If IsNumeric(x) = True Then
+            txtDirectDiscount.Text = Convert_To_Currency(x)
+            Calculate_Generate_Fees()
+        Else
+            MsgBox("Invalid input!", MsgBoxStyle.Critical)
+        End If
     End Sub
 End Class

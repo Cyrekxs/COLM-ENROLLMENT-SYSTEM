@@ -23,9 +23,9 @@ Partial Class frm_elementary_assessment
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_elementary_assessment))
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.MyButton1 = New COLM_ENROLLMENT_SYSTEM.MyButton()
@@ -82,6 +82,9 @@ Partial Class frm_elementary_assessment
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.txtDirectDiscount = New System.Windows.Forms.TextBox()
+        Me.Label24 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -97,7 +100,7 @@ Partial Class frm_elementary_assessment
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(989, 50)
+        Me.Panel1.Size = New System.Drawing.Size(985, 50)
         Me.Panel1.TabIndex = 89
         '
         'lblTitle
@@ -118,7 +121,7 @@ Partial Class frm_elementary_assessment
         Me.MyButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.MyButton1.FlatAppearance.BorderSize = 0
         Me.MyButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.MyButton1.Location = New System.Drawing.Point(945, 9)
+        Me.MyButton1.Location = New System.Drawing.Point(941, 9)
         Me.MyButton1.Name = "MyButton1"
         Me.MyButton1.Size = New System.Drawing.Size(32, 32)
         Me.MyButton1.TabIndex = 1
@@ -143,7 +146,7 @@ Partial Class frm_elementary_assessment
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel2.Location = New System.Drawing.Point(0, 50)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(219, 466)
+        Me.Panel2.Size = New System.Drawing.Size(219, 515)
         Me.Panel2.TabIndex = 90
         '
         'txtSection
@@ -381,7 +384,7 @@ Partial Class frm_elementary_assessment
         Me.Panel3.BackColor = System.Drawing.Color.Black
         Me.Panel3.Location = New System.Drawing.Point(584, 50)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(3, 400)
+        Me.Panel3.Size = New System.Drawing.Size(3, 446)
         Me.Panel3.TabIndex = 120
         '
         'Label19
@@ -410,13 +413,13 @@ Partial Class frm_elementary_assessment
         Me.DG_Summary.RowHeadersVisible = False
         Me.DG_Summary.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
         Me.DG_Summary.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DG_Summary.Size = New System.Drawing.Size(365, 364)
+        Me.DG_Summary.Size = New System.Drawing.Size(365, 410)
         Me.DG_Summary.TabIndex = 118
         '
         'DataGridViewTextBoxColumn5
         '
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DataGridViewTextBoxColumn5.DefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle16.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DataGridViewTextBoxColumn5.DefaultCellStyle = DataGridViewCellStyle16
         Me.DataGridViewTextBoxColumn5.HeaderText = "FEE CODE"
         Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
         Me.DataGridViewTextBoxColumn5.ReadOnly = True
@@ -425,9 +428,9 @@ Partial Class frm_elementary_assessment
         '
         'DataGridViewTextBoxColumn6
         '
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.DataGridViewTextBoxColumn6.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight
+        DataGridViewCellStyle17.Font = New System.Drawing.Font("Segoe UI Semibold", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.DataGridViewTextBoxColumn6.DefaultCellStyle = DataGridViewCellStyle17
         Me.DataGridViewTextBoxColumn6.HeaderText = "AMOUNT"
         Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
         Me.DataGridViewTextBoxColumn6.ReadOnly = True
@@ -435,8 +438,8 @@ Partial Class frm_elementary_assessment
         '
         'Column14
         '
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        Me.Column14.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        Me.Column14.DefaultCellStyle = DataGridViewCellStyle18
         Me.Column14.HeaderText = "DUE DATE"
         Me.Column14.Name = "Column14"
         Me.Column14.ReadOnly = True
@@ -505,7 +508,7 @@ Partial Class frm_elementary_assessment
         '
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(227, 354)
+        Me.Label15.Location = New System.Drawing.Point(230, 398)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(112, 15)
         Me.Label15.TabIndex = 111
@@ -513,7 +516,7 @@ Partial Class frm_elementary_assessment
         '
         'txtDeductions
         '
-        Me.txtDeductions.Location = New System.Drawing.Point(231, 372)
+        Me.txtDeductions.Location = New System.Drawing.Point(234, 416)
         Me.txtDeductions.Name = "txtDeductions"
         Me.txtDeductions.ReadOnly = True
         Me.txtDeductions.Size = New System.Drawing.Size(109, 23)
@@ -535,7 +538,7 @@ Partial Class frm_elementary_assessment
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(226, 267)
+        Me.Label13.Location = New System.Drawing.Point(229, 311)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(85, 15)
         Me.Label13.TabIndex = 108
@@ -543,7 +546,7 @@ Partial Class frm_elementary_assessment
         '
         'txtOldBalance
         '
-        Me.txtOldBalance.Location = New System.Drawing.Point(229, 285)
+        Me.txtOldBalance.Location = New System.Drawing.Point(232, 329)
         Me.txtOldBalance.Name = "txtOldBalance"
         Me.txtOldBalance.ReadOnly = True
         Me.txtOldBalance.Size = New System.Drawing.Size(109, 23)
@@ -555,7 +558,7 @@ Partial Class frm_elementary_assessment
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(454, 310)
+        Me.Label12.Location = New System.Drawing.Point(457, 354)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(74, 15)
         Me.Label12.TabIndex = 106
@@ -563,7 +566,7 @@ Partial Class frm_elementary_assessment
         '
         'txtSurcharge
         '
-        Me.txtSurcharge.Location = New System.Drawing.Point(457, 329)
+        Me.txtSurcharge.Location = New System.Drawing.Point(460, 373)
         Me.txtSurcharge.Name = "txtSurcharge"
         Me.txtSurcharge.ReadOnly = True
         Me.txtSurcharge.Size = New System.Drawing.Size(109, 23)
@@ -575,7 +578,7 @@ Partial Class frm_elementary_assessment
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(342, 354)
+        Me.Label11.Location = New System.Drawing.Point(345, 398)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(97, 15)
         Me.Label11.TabIndex = 104
@@ -583,7 +586,7 @@ Partial Class frm_elementary_assessment
         '
         'txtGrossFee
         '
-        Me.txtGrossFee.Location = New System.Drawing.Point(346, 372)
+        Me.txtGrossFee.Location = New System.Drawing.Point(349, 416)
         Me.txtGrossFee.Name = "txtGrossFee"
         Me.txtGrossFee.ReadOnly = True
         Me.txtGrossFee.Size = New System.Drawing.Size(109, 23)
@@ -595,7 +598,7 @@ Partial Class frm_elementary_assessment
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(225, 392)
+        Me.Label10.Location = New System.Drawing.Point(228, 436)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(201, 25)
         Me.Label10.TabIndex = 102
@@ -604,7 +607,7 @@ Partial Class frm_elementary_assessment
         'txtNetFee
         '
         Me.txtNetFee.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNetFee.Location = New System.Drawing.Point(230, 419)
+        Me.txtNetFee.Location = New System.Drawing.Point(233, 463)
         Me.txtNetFee.Name = "txtNetFee"
         Me.txtNetFee.ReadOnly = True
         Me.txtNetFee.Size = New System.Drawing.Size(339, 33)
@@ -616,7 +619,7 @@ Partial Class frm_elementary_assessment
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(340, 310)
+        Me.Label8.Location = New System.Drawing.Point(343, 354)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(101, 15)
         Me.Label8.TabIndex = 100
@@ -624,7 +627,7 @@ Partial Class frm_elementary_assessment
         '
         'txtMFee
         '
-        Me.txtMFee.Location = New System.Drawing.Point(344, 329)
+        Me.txtMFee.Location = New System.Drawing.Point(347, 373)
         Me.txtMFee.Name = "txtMFee"
         Me.txtMFee.ReadOnly = True
         Me.txtMFee.Size = New System.Drawing.Size(109, 23)
@@ -636,7 +639,7 @@ Partial Class frm_elementary_assessment
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(225, 310)
+        Me.Label7.Location = New System.Drawing.Point(228, 354)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(76, 15)
         Me.Label7.TabIndex = 98
@@ -644,7 +647,7 @@ Partial Class frm_elementary_assessment
         '
         'txtTFee
         '
-        Me.txtTFee.Location = New System.Drawing.Point(229, 329)
+        Me.txtTFee.Location = New System.Drawing.Point(232, 373)
         Me.txtTFee.Name = "txtTFee"
         Me.txtTFee.ReadOnly = True
         Me.txtTFee.Size = New System.Drawing.Size(109, 23)
@@ -658,9 +661,9 @@ Partial Class frm_elementary_assessment
         Me.Panel4.Controls.Add(Me.Button2)
         Me.Panel4.Controls.Add(Me.Button1)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel4.Location = New System.Drawing.Point(219, 463)
+        Me.Panel4.Location = New System.Drawing.Point(219, 512)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(770, 53)
+        Me.Panel4.Size = New System.Drawing.Size(766, 53)
         Me.Panel4.TabIndex = 129
         '
         'Button2
@@ -691,11 +694,46 @@ Partial Class frm_elementary_assessment
         Me.Button1.Text = "DONE"
         Me.Button1.UseVisualStyleBackColor = False
         '
+        'Button6
+        '
+        Me.Button6.BackColor = System.Drawing.Color.SeaGreen
+        Me.Button6.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.ForeColor = System.Drawing.Color.White
+        Me.Button6.Location = New System.Drawing.Point(349, 285)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(110, 25)
+        Me.Button6.TabIndex = 132
+        Me.Button6.Text = "CHANGE"
+        Me.Button6.UseVisualStyleBackColor = False
+        '
+        'txtDirectDiscount
+        '
+        Me.txtDirectDiscount.Location = New System.Drawing.Point(231, 285)
+        Me.txtDirectDiscount.Name = "txtDirectDiscount"
+        Me.txtDirectDiscount.ReadOnly = True
+        Me.txtDirectDiscount.Size = New System.Drawing.Size(111, 23)
+        Me.txtDirectDiscount.TabIndex = 131
+        Me.txtDirectDiscount.Text = "0.00"
+        Me.txtDirectDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label24
+        '
+        Me.Label24.AutoSize = True
+        Me.Label24.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label24.Location = New System.Drawing.Point(228, 267)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(110, 15)
+        Me.Label24.TabIndex = 130
+        Me.Label24.Text = "DIRECT DISCOUNT"
+        '
         'frm_elementary_assessment
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(989, 516)
+        Me.ClientSize = New System.Drawing.Size(985, 565)
+        Me.Controls.Add(Me.Button6)
+        Me.Controls.Add(Me.txtDirectDiscount)
+        Me.Controls.Add(Me.Label24)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.txtHonorPerct)
         Me.Controls.Add(Me.Label23)
@@ -806,4 +844,7 @@ Partial Class frm_elementary_assessment
     Friend WithEvents Panel4 As System.Windows.Forms.Panel
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button6 As Button
+    Friend WithEvents txtDirectDiscount As TextBox
+    Friend WithEvents Label24 As Label
 End Class

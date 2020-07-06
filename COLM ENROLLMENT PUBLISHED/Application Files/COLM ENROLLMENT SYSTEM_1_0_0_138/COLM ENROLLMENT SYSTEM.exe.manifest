@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="COLM ENROLLMENT SYSTEM.exe" size="21635584">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="COLM ENROLLMENT SYSTEM.exe" size="21638144">
       <assemblyIdentity name="COLM ENROLLMENT SYSTEM" version="1.0.0.3" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>eJ0n4U7/AgdXBj399vhLk39tFEDueklmkg4CyMe+Iwk=</dsig:DigestValue>
+        <dsig:DigestValue>jCIsMiQzNMcdxqpdLWuS+OM3+GzVBr3fWCQddps+qeM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
