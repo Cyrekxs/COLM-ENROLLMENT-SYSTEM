@@ -180,6 +180,17 @@
             cmbCourseCode.Items.Add("JUNIOR HIGH")
             cmbCourseCode.Text = "JUNIOR HIGH"
             cmbCourseCode.Enabled = False
+        ElseIf cmbEducationLevel.Text = "ELEMENTARY" Then
+            cmbCourseCode.Items.Clear()
+            cmbCourseCode.Items.Add("ELEMENTARY")
+            cmbCourseCode.Text = "ELEMENTARY"
+            cmbCourseCode.Enabled = False
+        ElseIf cmbEducationLevel.Text = "PRE ELEMENTARY" Then
+            cmbCourseCode.Items.Clear()
+            cmbCourseCode.Items.Add("PRE ELEMENTARY")
+            cmbCourseCode.Text = "PRE ELEMENTARY"
+            cmbCourseCode.Enabled = False
+
         ElseIf cmbEducationLevel.Text = "SENIOR HIGH" Then
             cmbCourseCode.Items.Clear()
             cmbCourseCode.Enabled = True

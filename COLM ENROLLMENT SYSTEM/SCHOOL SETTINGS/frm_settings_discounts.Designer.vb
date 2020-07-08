@@ -173,7 +173,7 @@ Partial Class frm_settings_discounts
         '
         Me.cmbSEducationLevel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbSEducationLevel.FormattingEnabled = True
-        Me.cmbSEducationLevel.Items.AddRange(New Object() {"COLLEGE", "SENIOR HIGH", "JUNIOR HIGH", "ELEMENTARY"})
+        Me.cmbSEducationLevel.Items.AddRange(New Object() {"COLLEGE", "SENIOR HIGH", "JUNIOR HIGH", "ELEMENTARY", "PRE ELEMENTARY"})
         Me.cmbSEducationLevel.Location = New System.Drawing.Point(9, 37)
         Me.cmbSEducationLevel.Name = "cmbSEducationLevel"
         Me.cmbSEducationLevel.Size = New System.Drawing.Size(181, 23)
